@@ -1,127 +1,98 @@
-/* 全域重設樣式 */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* 基本字體設定 */
-body {
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    background-color: #000000;
-    color: #ffffff;
-    line-height: 1.6;
-}
-
-/* Material Icons 字體設定 */
-.material-symbols-outlined {
-    font-variation-settings:
-        'FILL' 0,
-        'FILL' 0,
-        'wght' 400,
-        'GRAD' 0,
-        'opsz' 24;
-}
-
-/* 頁面容器 */
-.page-container {
-    min-height: 100vh;
+/* --- Top Navigation (LOGO + 左右分類) --- */
+.top-nav {
     width: 100%;
     display: flex;
-    flex-direction: column;
-}
-
-.layout-container {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-.content-wrapper {
-    padding: 10px 0;
-    display: flex;
-    justify-content: center;
-    flex: 1;
-}
-
-/* 主要內容容器 */
-.layout-content {
-    max-width: 1280px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-/* ========== 頂部資訊欄 ========== */
-.top-info-bar {
-    display: flex;
-    align-items: center;
+    white-space: nowrap;
     justify-content: space-between;
-    background-color: #1a1a1a;
-    padding: 6px 20px;
-    font-size: 12px;
-    margin-bottom: 0;
-    flex-wrap: wrap;
-    gap: 8px;
+    align-items: center;
+    padding: 12px 40px;
+    border-bottom: 1px solid #ddd;
 }
 
-.top-info-left {
+.top-nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+.nav-logo h1 {
+    font-size: 26px;
+    letter-spacing: 10px;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+.nav-right {
+    display: flex;
+    align-items: center;   /* ← 垂直置中 */
+    gap: 8px;              /* icon 與文字之間距離 */
+}
+.nav-right p {
+    margin: 0;
+    font-size: 14px;
+}
+
+
+
+/* --- Sub Navigation (次分類 + 搜尋框) --- */
+.sub-nav {
+    width: 100%;
+    padding: 10px 40px;
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+
+
+.sub-nav a {
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+}
+
+.sub-nav a.active {
+    color: #c0392b;
+    font-weight: bold;
+}
+
+/* --- 搜尋框 --- */
+.search-box {
+    margin-left: auto;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    width: 250px;
+}
+
+.search-box input {
+    border: none;
     flex: 1;
-    min-width: 0;
+    outline: none;
+    font-size: 14px;
 }
 
-.phone-number {
-    color: #ffffff;
-    font-size: 12px;
-    white-space: nowrap;
+.icon-search {
+    margin-left: 8px;
+    opacity: 0.6;
 }
 
-.social-icon-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #ffffff;
-    text-decoration: none;
-    transition: opacity 0.3s ease;
-    width: 20px;
-    height: 20px;
-}
-
-.social-icon-link:hover {
-    opacity: 0.7;
-}
-
-.social-icon-svg {
-    width: 18px;
-    height: 18px;
-    fill: currentColor;
-}
-
-.social-icon-link .material-symbols-outlined {
-    font-size: 18px;
-}
-
-.top-info-right {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    flex-shrink: 0;
-}
-
-.top-info-link {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 12px;
-    white-space: nowrap;
-    transition: opacity 0.3s ease;
-}
-
-.top-info-link:hover {
-    opacity: 0.7;
-    text-decoration: underline;
+.avant {
+    margin-left: 20px;
+    color: #c0392b;
+    font-weight: bold;
 }
 
 /* ========== 促銷橫幅 ========== */
@@ -143,104 +114,151 @@ body {
     letter-spacing: 0.5px;
 }
 
-/* ========== 主要導航列 ========== */
-.main-navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: rgba(0, 0, 0, 0.9);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    padding: 10px 20px;
-    backdrop-filter: blur(10px);
-    margin-bottom: 0;
-    margin-top: 0;
-    gap: 12px;
-    flex-wrap: wrap;
-}
 
-.main-nav-left {
-    display: flex;
-    align-items: center;
-    flex-shrink: 0;
-}
-
-.logo-section {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    flex-shrink: 0;
-}
-
-.logo-icon {
-    width: 24px;
-    height: 24px;
-    color: #ffffff;
-}
-
-.logo-text {
-    font-size: 16px;
-    font-weight: 700;
-    color: #ffffff;
-    white-space: nowrap;
-}
-
-.main-nav-center {
-    display: flex;
-    align-items: center;
-    flex: 1;
-    justify-content: center;
-    min-width: 0;
-}
-
-.main-nav-right {
-    display: flex;
-    align-items: center;
-    flex-shrink: 0;
-}
-
-/* 搜尋框 */
-.search-container {
-    display: flex;
-    width: 100%;
-    max-width: 500px;
-    height: 40px;
-}
-
-.search-icon-wrapper {
+/* 主要橫幅區域 */
+.hero-section {
+    min-height: 480px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDev4XQDh8Yz_FpNTe5dusxUHy3gZmsZShXv0M1lQs31wQY32sPgfFTmTOw3Iz7y3kh4gEM1g4AxD0rbfG2s2d1_1TcYWQ4fZ255xbUEkZa0yfD_tbmCR7wXCjD6VZ2JkrK_FjAXb9oTZxmMyf06ugxUHzjptY9hUOwUqtrqUK3ApGLygJAG2phvfXN9aOdp_Es4JfiSjKTR9pnxHm8Xht9rupn9SdYCxCp8Rj0apkixGfmfwDJcWVzcNAk0Z-vUlx8FMiwM0n5gQ");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 16px;
-    background-color: #1a1a1a;
-    border-radius: 8px 0 0 8px;
-    color: #808080;
-    flex-shrink: 0;
+    padding: 16px;
 }
 
-.search-icon-wrapper .material-symbols-outlined {
-    font-size: 20px;
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    text-align: center;
+    max-width: 800px;
 }
 
-.search-input {
-    flex: 1;
-    height: 100%;
-    padding: 0 16px;
-    background-color: #1a1a1a;
-    border: none;
-    border-radius: 0 8px 8px 0;
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.hero-title {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 1.2;
     color: #ffffff;
+}
+
+.hero-subtitle {
     font-size: 14px;
-    outline: none;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.9);
 }
 
-.search-input::placeholder {
-    color: #808080;
+
+/* 探索威士忌/分類/商品區域 */
+
+.discover-section,
+.category-section,
+.products-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto; /* 與 news-section 一致 */
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
-.search-input:focus {
-    outline: 2px solid rgba(255, 255, 255, 0.5);
-    outline-offset: -2px;
+
+   
+
+
+.section-title {
+    font-size: 22px;
+    font-weight: 800;
+    color:  #1a1a1a;
+   padding: 24px 16px 4px 0;
+ margin-bottom: 20px;
+  grid-column: 1 / -1;   /* 讓標題跨越整個 grid */
+}
+
+
+.discover-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: relative;
+      margin-top: 30px;  /* ← 最有效、最可控 */
+}
+
+
+.category-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: relative;
+}
+
+
+
+.discover-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+     margin-top: 0;
+}
+
+
+.products-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: relative;
+}
+
+.products-grid {
+    display: flex;
+    gap: 24px;
+    padding: 16px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: #808080 #1a1a1a;
+}
+
+
+
+/* grid */
+
+.discover-grid {
+    display: flex;
+    gap: 24px;
+    padding: 16px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* 隱藏滾動條 */
+    -ms-overflow-style: none; /* IE 和 Edge */
+    flex: 1;
+}
+
+
+.category-grid {
+    display: flex;
+    gap: 24px;
+    padding: 16px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: #808080 #1a1a1a;
 }
 
 /* 按鈕樣式 */
@@ -329,124 +347,19 @@ body {
     color: #000000;
 }
 
-/* ========== 分類選單 ========== */
-.category-menu {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    background-color: rgba(0, 0, 0, 0.9);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    padding: 6px 20px;
-    margin-bottom: 10px;
-    margin-top: 0;
-    flex-wrap: wrap;
-}
-
-.category-dropdown {
-    position: relative;
-}
-
-.category-dropdown-btn {
-    background-color: transparent;
-    border: none;
-    color: #ffffff;
-    font-size: 14px;
-    font-weight: 500;
-    padding: 8px 16px;
-    cursor: pointer;
-    transition: opacity 0.3s ease;
-    white-space: nowrap;
-}
-
-.category-dropdown-btn:hover {
-    opacity: 0.7;
-}
-
-/* ========== 主要內容區域 ========== */
-.main-content {
-    display: flex;
-    flex-direction: column;
-    gap: 48px;
-    margin-top: 10px;
-}
-
-/* 主要橫幅區域 */
-.hero-section {
-    min-height: 480px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDev4XQDh8Yz_FpNTe5dusxUHy3gZmsZShXv0M1lQs31wQY32sPgfFTmTOw3Iz7y3kh4gEM1g4AxD0rbfG2s2d1_1TcYWQ4fZ255xbUEkZa0yfD_tbmCR7wXCjD6VZ2JkrK_FjAXb9oTZxmMyf06ugxUHzjptY9hUOwUqtrqUK3ApGLygJAG2phvfXN9aOdp_Es4JfiSjKTR9pnxHm8Xht9rupn9SdYCxCp8Rj0apkixGfmfwDJcWVzcNAk0Z-vUlx8FMiwM0n5gQ");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 16px;
-}
-
-.hero-content {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    align-items: center;
-    text-align: center;
-    max-width: 800px;
-}
-
-.hero-text {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.hero-title {
-    font-size: 36px;
-    font-weight: 800;
-    line-height: 1.2;
-    color: #ffffff;
-}
-
-.hero-subtitle {
-    font-size: 14px;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 0.9);
-}
-
-/* 探索威士忌區域 */
-.discover-section {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    position: relative;
-}
-
-.discover-container {
-    position: relative;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.discover-grid {
-    display: flex;
-    gap: 16px;
-    padding: 16px;
-    overflow-x: auto;
-    overflow-y: hidden;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none; /* 隱藏滾動條 */
-    -ms-overflow-style: none; /* IE 和 Edge */
-    flex: 1;
-}
-
 /* 隱藏滾動條（Webkit 瀏覽器） */
 .discover-grid::-webkit-scrollbar {
     display: none;
 }
 
 /* 箭頭按鈕 */
+
+.arrow-icon {
+    width: 30px;
+    height: 30px;
+    color: #2a2a2a;   /* 你要的箭頭顏色 */
+}
+
 .scroll-arrow {
     position: relative;
     width: 48px;
@@ -473,16 +386,25 @@ body {
     transform: scale(0.95);
 }
 
+/* 改善箭頭顯示：白色更明顯 */
 .scroll-arrow .material-symbols-outlined {
-    font-size: 24px;
+    font-size: 32px;
+    color: white;
 }
 
+
 .scroll-arrow-left {
-    left: 0;
+    position: absolute;
+    left: -10px;
+    top: 40%;
+  
 }
 
 .scroll-arrow-right {
-    right: 0;
+    position: absolute;
+    right: -10px;
+    top: 40%;
+   
 }
 
 .discover-card {
@@ -530,32 +452,9 @@ body {
     margin: 0;
 }
 
+
 /* 分類區域 */
-.category-section {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    position: relative;
-}
 
-.section-title {
-    font-size: 22px;
-    font-weight: 700;
-    color: #ffffff;
-    padding: 20px 16px 12px 16px;
-}
-
-.category-grid {
-    display: flex;
-    gap: 24px;
-    padding: 16px;
-    overflow-x: auto;
-    overflow-y: hidden;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: thin;
-    scrollbar-color: #808080 #1a1a1a;
-}
 
 /* 自訂滾動條樣式（Webkit 瀏覽器） */
 .category-grid::-webkit-scrollbar {
@@ -627,24 +526,7 @@ body {
 }
 
 /* 商品區域 */
-.products-section {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    position: relative;
-}
 
-.products-grid {
-    display: flex;
-    gap: 24px;
-    padding: 16px;
-    overflow-x: auto;
-    overflow-y: hidden;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: thin;
-    scrollbar-color: #808080 #1a1a1a;
-}
 
 /* 自訂滾動條樣式（Webkit 瀏覽器） */
 .products-grid::-webkit-scrollbar {
@@ -713,42 +595,85 @@ body {
     color: #808080;
 }
 
-/* 探索呼籲區域 */
-.cta-section {
-    display: flex;
+.news-section {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 30px;
+}
+
+.news-card {
+  display: flex;
+  gap: 20px;
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.news-card.reverse {
+  flex-direction: row-reverse;
+}
+
+.news-card img {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.news-content {
+  flex: 1;
+}
+
+.news-content h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.news-content p {
+  margin: 0 0 15px;
+  color: #444;
+  line-height: 1.5;
+}
+
+.news-btn {
+  padding: 8px 16px;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.news-btn:hover {
+  background: #333;
+}
+
+.warning {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666;
+}
+    
+/* RWD */
+@media (max-width: 768px) {
+  .news-card {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 24px;
-    padding: 40px;
-    margin: 40px 0;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-}
+  }
 
-.cta-content {
-    display: flex;
+  .news-card.reverse {
     flex-direction: column;
-    gap: 8px;
-    text-align: center;
-}
+  }
 
-.cta-title {
-    font-size: 24px;
-    font-weight: 700;
-    color: #ffffff;
-}
-
-.cta-text {
-    color: #808080;
-    max-width: 512px;
-}
-
-.cta-buttons {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    margin-top: 8px;
+  .news-card img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 /* ========== 頁尾 ========== */
@@ -1034,4 +959,8 @@ body {
         padding: 6px 140px;
     }
 }
+
+
+
+
 
