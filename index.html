@@ -10,7 +10,7 @@
     <!DOCTYPE html>
 <html>
 <head>
-<title>Hello, World!</title>
+<title>天道</title>
 <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -28,11 +28,19 @@
 </div>
 
 <div class="nav-logo">
-<h1>LOGO</h1>
+    <img src="images/logo.png" alt="LOGO">
 </div>
 
+
+
 <div class="nav-right">
-<span class="icon-search"> 📞 </span>
+  
+<div class="social-icons">
+<a href="#"><img src="images/facebook_1051309-default.png" alt="Facebook"></a>
+<a href="#"><img src="images/instagram-logo_87390-default.png" alt="Instagram"></a>
+<a href="#"><img src="images/line_1946546-default.png" alt="Twitter"></a>
+</div>
+ <img src="images/phone-solid.svg" alt="phone icon">
 <p> 02 1234 5678 </p>
 </div>
 
@@ -47,18 +55,26 @@
 
 <div class="search-box">
 <input type="text" placeholder="Find">
-<span class="icon-search">🔍</span>
+<div class="search-icon">
+<img src="images/search.svg" alt="search icon" id="search-icon">
 </div>
 
-<span class="icon-search">👤</span>
-<span class="icon-search">🛒</span>
+</div>
+
+<div class="user-icon">
+    <img src="images/user.svg" alt="user icon">
+</div>
+
+</div>
+
+   <img src="images/shopping-bag.png" alt="cart">
 
 </nav>
 
 <!-- 促銷橫幅 -->
 <nav>
 <div class="promo-banner">
-<span class="promo-text">-15% ON NOVEMBER</span>
+<span class="promo-text">新品逐步上市</span>
 </div>
 </nav>
 
@@ -67,10 +83,10 @@
 <section class="hero-section">
 <div class="hero-content">
 <div class="hero-text">
-<h1 class="hero-title">Curated Selections for Every Palate</h1>
-<h2 class="hero-subtitle">Discover our exclusive collection of fine spirits, wines, and craft non-alcoholic beverages.</h2>
+<h1 class="hero-title">天道之魂，緩緩甦醒</h1>
+<h2 class="hero-subtitle">香氣飽滿、尾韻順口，泰國必喝之選。</h2>
 </div>
-<button class="btn-primary btn-large">Shop New Arrivals</button>
+<button class="btn-primary btn-large">立即選購</button>
 </div>
 </section>
 
@@ -78,24 +94,24 @@
 
 <!-- 新上市 -->
 <section class="now-showing">
-    <h2 class="now-title">NOW SHOWING</h2>
+    <h2 class="now-title">新上市</h2>
 
     <div class="now-grid">
 
-        <div class="now-banner" style="background-image: url('https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1920&q=80');">
-            <button class="now-btn">DISCOVER</button>
+        <div class="now-banner" style="background-image: url('images/banner-中.png');">
+            <button class="now-btn">立即品嘗</button>
         </div>
 
-        <div class="now-banner" style="background-image: url('https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1920&q=80');">
-            <button class="now-btn">DISCOVER</button>
+        <div class="now-banner" style="background-image: url('images/banner-中.png');">
+            <button class="now-btn">立即入手</button>
         </div>
 
-        <div class="now-banner" style="background-image: url('https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1920&q=80');">
-            <button class="now-btn">DISCOVER</button>
+        <div class="now-banner" style="background-image: url('images/banner-中.png');">
+            <button class="now-btn">立即選購</button>
         </div>
 
-        <div class="now-banner" style="background-image: url('https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1920&q=80');">
-            <button class="now-btn">DISCOVER</button>
+        <div class="now-banner" style="background-image: url('images/banner-中.png');">
+            <button class="now-btn">立即品味</button>
         </div>
 
     </div>
@@ -110,51 +126,27 @@
 <div class="discover-grid">
 
 <div class="discover-card">
-<img src="https://images.unsplash.com/photo-1557682260-96773eb01377?q=80&w=1200" alt="威士酒">
+<img src="images/whisky-marketing-1080x1920.png" alt="威士酒">
 <p>威士忌</p>
 </div>
 
 <div class="discover-card">
-<img src="https://images.unsplash.com/photo-1557682260-96773eb01377?q=80&w=1200" alt="葡萄酒">
+<img src="images/wine-marketing-1080x1920.png" alt="葡萄酒">
 <p>葡萄酒</p>
 </div>
 
 <div class="discover-card">
-<img src="https://images.unsplash.com/photo-1557682260-96773eb01377?q=80&w=1200" alt="清酒">
+<img src="images/sake & shochu-marketing-1080x1920.png" alt="清酒">
 <p>清酒</p>
 </div>
 
 <div class="discover-card">
-<img src="https://images.unsplash.com/photo-1557682260-96773eb01377?q=80&w=1200" alt="雞尾酒">
+<img src="images/fruit liquor-marketing-1080x1920 (1).png" alt="雞尾酒">
 <p>雞尾酒</p>
 </div>
 
 </section>
 
-
-<!-- 熱門品牌區域 -->
-<section class="category-section">
-<h2 class="section-title">熱門品牌</h2>
-<div class="category-grid">
-
-<a href="#" class="category-card category-whiskey">
-<p class="category-name">天道</p>
-</a>
-
-<a href="#" class="category-card category-wine">
-<p class="category-name">葡萄酒品牌名字</p>
-</a>
-
-<a href="#" class="category-card category-non-alcoholic">
-<p class="category-name">清酒品牌名字</p>
-</a>
-
-<a href="#" class="category-card category-non-alcoholic">
-<p class="category-name">雞尾酒品牌名字</p>
-</a>
-
-</div>
-</section>
 
 
 <!-- 特色商品區域 -->
@@ -171,7 +163,7 @@
     <!-- 商品卡片 1 -->
     <div class="product-card">
       <div class="product-image-wrapper">
-        <img class="product-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWCPxQIzheU0H_i7e2RcGyqzvRn1MGdk9KN2N1H20OQ_sFV1fJ2RUcUgM3VKzD9wChikiUqk488fsVxGVLBQNzMYBJsmFWGRk6GYDRujeJ46oU5UwPFa5JaNjsnMziXvH92dB1EWxW3e1lVc58naLZt56una6FToSHbtUOwOkLmVeqTPn0udfagyvrVjoZyUBcfIZBXTQkhO1O2AYyGUZ-RvoaaAEV31u5DUS2F33dB0v4ZvAVZx4EEQQ_bA8IgdBV-tHbORblgg" alt="">
+        <img class="product-image" src="images/product-white-bg-1764589686770.png" alt="">
       </div>
     <div class="product-info">
     <h3 class="product-name">天上夢幻 旨口 特別純米</h3>
@@ -180,13 +172,13 @@
         <p class="member-price">會員價：NT$950</p>
     </div>
     </div>
-      <button class="btn-product-primary btn-full">Add to Cart</button>
+      <button class="btn-product-primary btn-full">加到購物車</button>
     </div>
 
     <!-- 商品卡片 2 -->
     <div class="product-card">
       <div class="product-image-wrapper">
-        <img class="product-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiLVXsYA8a0dsFhwHLURM-pJB79XfRO2I0r086dISB4lIfeKgnMC6-i6f97jFbYZ26yq2S97w3tpqKtRVKE-Klmc9GDMTrpfiRQDl2eb3jAzR1MiLiBPSyInOlzp7WENQEMBLZAPBY-GJFQW14MAxsOLCjk2iMcbl71o2rgdR4ye2V2IOCL1jW9KE_Wg-hjxNITj2JpY5vOg_csa0rao5v3ZccPjeExey91VECgaeYaxXOtDW6T3tqQ32EERKZox5_nvgzCZHMRg" alt="">
+        <img class="product-image" src="images/product-white-bg-1764589686770.png" alt="">
       </div>
     <div class="product-info">
     <h3 class="product-name">天上夢幻 旨口 特別純米</h3>
@@ -195,15 +187,14 @@
         <p class="member-price">會員價：NT$950</p>
     </div>
     </div>
-      <button class="btn-product-primary btn-full">Add to Cart</button>
+      <button class="btn-product-primary btn-full">加到購物車</button>
     </div>
-
 
 
     <!-- 商品卡片 3 -->
     <div class="product-card">
       <div class="product-image-wrapper">
-        <img class="product-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADLBs19nUxXneqKOhrvBM0r5wzS-LVLQfI-o-L4OLyw5gTVH5PUOuftLi283WklhrTszDnQVq8aHIrXNUsj2Pjw3gCczqQDE0DSPFInYfeVHe5-FGwpQzKKI7GW1vQhkbO5HXDs2feFSjz3tKpq6P1HMpII-od3VBfsDw7ZAZbxjXbP5PH_Qy-cJ1N2WkTBkEFN132coui1VcdCTNORvyk2HCqwUVnP-FKaZoW5HtgoOdeKEluZLlIfTvEgxXLaeGUEk-HwbBI9A" alt="">
+        <img class="product-image" src="images/product-white-bg-1764589686770.png" alt="">
       </div>
     <div class="product-info">
     <h3 class="product-name">天上夢幻 旨口 特別純米</h3>
@@ -212,13 +203,13 @@
         <p class="member-price">會員價：NT$950</p>
     </div>
     </div>
-      <button class="btn-product-primary btn-full">Add to Cart</button>
+      <button class="btn-product-primary btn-full">加到購物車</button>
     </div>
 
     <!-- 商品卡片 4 -->
     <div class="product-card">
       <div class="product-image-wrapper">
-        <img class="product-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClRyok7Tru-ej6kxcgxIJYypHZELT5aYSZ6ldiOuTkTr4Ad8TLKqPTPEJtbn6WaxNr_X4rgIQN-ctlvIER8SzNYRQwTGUKCkA_Xxqq50j-8EYY2TmhNPk7-AQKKLGSShgQ_poGPGjCHST86I50L-Ib62m9c9QXoZvUIJDu-3hCXO6KSrHAWna5PW_kw_ikVH7RgvFkEYi-4KZxgWTTuaGOMgVA64zWHhDeLgeGv3w8JWxxxEMTb6ZaGCi70HGL0eQlezzlojP9eA" alt="">
+        <img class="product-image" src="images/product-white-bg-1764589686770.png" alt="">
       </div>
     <div class="product-info">
     <h3 class="product-name">天上夢幻 旨口 特別純米</h3>
@@ -227,11 +218,9 @@
         <p class="member-price">會員價：NT$950</p>
     </div>
     </div>
-      <button class="btn-product-primary btn-full">Add to Cart</button>
+      <button class="btn-product-primary btn-full">家道購物車</button>
     </div>
 
-  </div>
-</section>
 
   </div>
 </section>
@@ -244,7 +233,7 @@
 
 <!-- 卡片 1 -->
 <div class="news-card">
-<img src="https://images.unsplash.com/photo-1557682260-96773eb01377?q=80&w=1200" alt="氣泡酒">
+<img src="images/banner-中.png" alt="氣泡酒">
 <div class="news-content">
 <h3>義大利甜蜜聖誕氣泡酒 🎄</h3>
 <p>
@@ -256,7 +245,7 @@
 
 <!-- 卡片 2 -->
 <div class="news-card">
-<img src="https://images.unsplash.com/photo-1557682260-96773eb01377?q=80&w=1200" alt="氣泡酒">
+<img src="images/banner-中.png" alt="氣泡酒">
 <div class="news-content">
 <h3>甜蜜聖誕氣泡 🎄</h3>
 <p>
@@ -268,7 +257,7 @@
 
 <!-- 卡片 3 -->
 <div class="news-card">
-<img src="https://images.unsplash.com/photo-1557682260-96773eb01377?q=80&w=1200" alt="氣泡酒">
+<img src="images/banner-中.png" alt="氣泡酒">
 <div class="news-content">
 <h3>年菜圍爐標配 🧧</h3>
 <p>
@@ -280,7 +269,7 @@
 
 <!-- 卡片 4 -->
 <div class="news-card">
-<img src="https://images.unsplash.com/photo-1557682260-96773eb01377?q=80&w=1200" alt="氣泡酒">
+<img src="images/banner-中.png" alt="氣泡酒">
 <div class="news-content">
 <h3>全球爆款龍舌蘭 🌎</h3>
 <p>
@@ -299,11 +288,7 @@
         <div class="footer-column">
             <h3 class="footer-title">關於我們</h3>
             <p>提供多種酒類資訊、品酒指南與專業推薦。</p>
-            <div class="footer-social-icons">
-                <img src="icons/facebook.svg" alt="Facebook">
-                <img src="icons/instagram.svg" alt="Instagram">
-                <img src="icons/youtube.svg" alt="YouTube">
-            </div>
+
         </div>
 
         <div class="footer-column">
@@ -332,8 +317,7 @@
     </div>
 
     <div class="footer-warning">
-        <span>未滿十八歲請勿飲酒。</span><br>
-        <span>禁止酒駕，飲酒過量有害健康。</span>
+        <span>未滿十八歲請勿飲酒。禁止酒駕，飲酒過量有害健康。</span>
     </div>
 </footer>
 

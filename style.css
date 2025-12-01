@@ -21,7 +21,7 @@
     margin: 0 15px;
     text-decoration: none;
     color: black;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .nav-logo h1 {
@@ -37,6 +37,59 @@
     align-items: center;   /* ← 垂直置中 */
     gap: 8px;              /* icon 與文字之間距離 */
 }
+
+.social-icons img {
+    width: 32px;        /* ← 調整 icon 大小 */
+    height: 32px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+/* Facebook */
+.social-icons a.fb img:hover {
+    content: url("images/facebook_1051309-hover.png");
+}
+.social-icons a.fb img:active {
+    content: url("images/facebook_1051309-active.png");
+}
+
+/* Instagram */
+.social-icons a.ig img:hover {
+    content: url("images/instagram-logo_87390-hover.png");
+}
+.social-icons a.ig img:active {
+    content: url("images/instagram-logo_87390-active.png");
+}
+
+/* LINE */
+.social-icons a.line img:hover {
+    content: url("images/line_1946546-hover.png");
+}
+.social-icons a.line img:active {
+    content: url("images/line_1946546-active.png");
+}
+
+.social-icons {
+    display: flex;
+    gap: 12px;  /* icon 之間的距離 */
+    align-items: center;
+}
+
+
+.phone-icon {
+    width: 18px;
+    fill: #2a2a2a;
+    transition: 0.25s;
+}
+
+.phone-icon:hover {
+    fill: #3f3f3f;
+}
+
+.phone-icon:active {
+    fill: #1a1a1a;
+}
+
 .nav-right p {
     margin: 0;
     font-size: 14px;
@@ -56,7 +109,7 @@
 
 .sub-nav a {
     text-decoration: none;
-    font-size: 14px;
+    font-size: 18px;
     color: black;
 }
 
@@ -79,13 +132,42 @@
     border: none;
     flex: 1;
     outline: none;
-    font-size: 14px;
+    font-size: 18px;
 }
 
-.icon-search {
-    margin-left: 8px;
-    opacity: 0.6;
+#search-icon .icon {
+    width: 24px;
+    height: 24px;
+    stroke: #2a2a2a;     /* Default 顏色 */
+    transition: 0.25s;
+    cursor: pointer;
 }
+
+#search-icon .icon:hover {
+    stroke: #3f3f3f;     /* Hover */
+}
+
+#search-icon .icon:active {
+    stroke: #1a1a1a;     /* 按下 Active */
+}
+
+
+#user-icon .icon {
+    width: 24px;
+    height: 24px;
+    stroke: #2a2a2a;  /* Default */
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+#user-icon .icon:hover {
+    stroke: #3f3f3f;  /* Hover */
+}
+
+#user-icon .icon:active {
+    stroke: #1a1a1a;  /* Active */
+}
+
 
 .avant {
     margin-left: 20px;
@@ -116,12 +198,13 @@
 /* ========== 主要橫幅 ========== */
 .hero-section {
     min-height: 480px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDev4XQDh8Yz_FpNTe5dusxUHy3gZmsZShXv0M1lQs31wQY32sPgfFTmTOw3Iz7y3kh4gEM1g4AxD0rbfG2s2d1_1TcYWQ4fZ255xbUEkZa0yfD_tbmCR7wXCjD6VZ2JkrK_FjAXb9oTZxmMyf06ugxUHzjptY9hUOwUqtrqUK3ApGLygJAG2phvfXN9aOdp_Es4JfiSjKTR9pnxHm8Xht9rupn9SdYCxCp8Rj0apkixGfmfwDJcWVzcNAk0Z-vUlx8FMiwM0n5gQ");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url(images/banner-右.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 0px;
     display: flex;
+
     align-items: center;
     justify-content: center;
     padding: 16px;
@@ -150,8 +233,8 @@
 }
 
 .hero-subtitle {
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 24px;
+    font-weight: 500;
     color: rgba(255, 255, 255, 0.9);
 }
 
@@ -171,7 +254,7 @@ background-color: #ffffff;
 color: #000000;
 border: none;
 border-radius: 8px;
-font-size: 12px;
+font-size: 24px;
 font-weight: 700;
 cursor: pointer;
 transition: background-color 0.3s ease;
@@ -185,7 +268,7 @@ background-color: #e0e0e0;
 .btn-large {
 height: 48px;
 padding: 0 20px;
-font-size: 16px;
+font-size: 18px;
 }
 
 .btn-full {
@@ -268,7 +351,7 @@ font-size: 20px;
     right: 24px;
     bottom: 20px;
     padding: 10px 30px;
-    font-size: 14px;
+    font-size: 16px;
     border-radius: 30px;
     border: 2px solid #000;
     background: #fff;
@@ -328,142 +411,21 @@ font-size: 20px;
 }
 
 .discover-card img {
-    width: 120px;
-    height: 160px;
+    width: 270px;
+    height: 360px;
     margin-bottom: 15px;
     transition: transform 0.25s;
     border-radius: 8px;
 }
 
 .discover-card p {
-    font-size: 14px;
+    font-size: 24px;
     font-weight: 600;
 }
 
 /* 滑鼠效果 */
 .discover-card:hover img {
     transform: scale(1.05);
-}
-
-
-
-/* ========== 熱門品牌分類 ========== */
-
-
-/* 外層區塊 */
-.category-section {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-
-
-/* 4 格卡片區 */
-.category-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 固定四個 */
-    gap: 20px;
-}
-
-/* 卡片基本樣式 */
-
-
-.category-card {
-    position: relative;
-    height: 360px;
-    border-radius: 16px;
-    overflow: hidden;
-    cursor: pointer;
-    display: flex;
-    align-items: flex-end;
-    text-decoration: none;
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    transition: transform 0.3s ease;
-}
-
-
-
-
-/* 背景圖片填滿 */
-.category-card::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-size: cover;
-    background-position: center;
-    transition: transform 0.4s ease;
-}
-
-/* 底部漸層 */
-.category-card::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 45%;
-    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
-}
-
-/* 卡片文字 */
-.category-name {
-    position: relative;
-    font-size: 18px;
-    font-weight: 700;
-    padding: 20px;
-    z-index: 2;
-}
-
-/* 滑鼠放大效果 */
-.category-card:hover::before {
-    transform: scale(1.07);
-}
-
-.category-card:hover {
-transform: scale(1.05);
-}
-
-
-/* ----------- 設定各品牌圖片 ------------- */
-
-.category-card::before {
-content: '';
-position: absolute;
-inset: 0;
-background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
-z-index: 1;
-}
-
-.category-whiskey {
-background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAPZ5PdFmHQ6XkU4urlqiECqrVq-ROm1kTj3ikESzRiHacyMjyWReRdKUGktvX0aRfg8jv9D5Kfo5XpsLDo64sO_hmBcPPdHY1-TKT9FdRCJBKSMjfY7zdi8GzgmKpy_7XYzmKfDq1pLvcl_R2-0koAicMnt3jHFn7shvNlIfVpQ48y1YXu4A_yRQKFeknNpAH2n-xOymL-Vvs1kHbFRtzqhCFkvjofCDiC7AAxPJlJ3aTUMJXn5KjRKkGkq9MKniL-9go3IeZqcQ");
-}
-
-.category-wine {
-background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuD1Jk3wObMvbUMgs7V2VjsmvIuVpfGFegux01YPWkVrv7Ms-G2-puo7cPj73auukL39Sup-szU9k5g0aXT0Z8I7-RzZwiMoqOuSQMBMZcPLO4eq3aDb0fe3RlXISZNdPIltC6StCxisQRT8Vi7kxCjzkz2iVYtwUO-jz8K-IZ9U72wCAusFDO6PPLeUcyOZAXkN_1gg_KcxkDk4Y5K_rrloIbAYLRUhQxa1gxIuckGlieOjrcF9Gf_i4wOdtqkX5yWjvX9o74aA4Q");
-}
-
-.category-non-alcoholic {
-background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDpL8XB5VsiqNNDu2_64VTxGaM72Ldh-eJ2Q-NOdwA4OTE_wdRE1DnhJlzHHLb7rcSDRUbrnqLPH_6AjXdxuPGgdK6_e5VwgbNA_shUqr7iZ49q0TUVKJJPYnaFIV76b9CGSxh3Y5CAryXa-0ukcmLNorRtR7fkGSdn2MADxrgdg3F2r1-DLaOdl3IgYqO-LbzuU9jx53cbiXmfEGlxbvDYtkQqy60EhGePDD3iS0Z2b8SyXJb15DcJkpp0ff7suJ2zGS3hevdxdA");
-}
-
-
-
-/* ----------- RWD ------------- */
-@media (max-width: 992px) {
-    .category-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 576px) {
-    .category-grid {
-        grid-template-columns: 1fr;
-    }
 }
 
 
@@ -539,7 +501,7 @@ background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 
 }
 
 .product-name {
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 600;
 }
 
@@ -617,95 +579,84 @@ background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 
 
 /* ========== 期間限定分類 ========== */
 
-
 /* ========== 期間限定分類 ========== */
-
-
 .news-section {
     width: 90%;
-    max-width: 1200px;
+    max-width: 1200px; /* 你要的寬度 */
     margin: 40px auto;
-    
-    /* 啟用 Flexbox 佈局 */
     display: flex;
-    flex-wrap: wrap; /* 允許卡片換行 */
-    justify-content: center; /* 讓卡片在寬螢幕時可以置中排列 */
-    gap: 30px; /* 卡片間距 */
+    flex-direction: column; /* 一欄一個 */
+    gap: 20px; /* 卡片與卡片的距離 */
 }
 
 .news-section .section-title {
-    /* 標題佔滿寬度並置中 */
-    width: 100%; 
+    width: 100%;
     text-align: center;
     margin-bottom: 40px;
     font-size: 32px;
     font-weight: 700;
 }
 
-
+/* 卡片：圖片 + 內容左右並排 */
 .news-card {
-    /* 核心設定：在所有尺寸下都佔據約 50% 寬度 */
-    /* 計算：50% 減去一半的 gap (30px / 2 = 15px)，確保一列能放兩張 */
-    width: calc(50% - 15px);
-    /* 為了適應手機畫面，設定一個較小的最小寬度，讓卡片可以順利並排 */
-    min-width: 300px; 
-    max-width: 585px; /* 限制單張卡片的最大寬度 */
-    
+    width: 100%;
     display: flex;
     gap: 20px;
     background: #fff;
     padding: 20px;
     border: 1px solid #ddd;
-    border-radius: 10px;
+    border-radius: 12px;
     align-items: center;
+    box-sizing: border-box;
+
+    margin-bottom: 20px; /* 🔥 保護距離避免重疊 */
 }
 
+/* 圖片維持比例，不會變形 */
 .news-card img {
-    /* 圖片寬度調整為百分比，以便在手機上和內容區域保持左右並排 */
-    width: 40%; 
-    min-width: 100px; /* 圖片最小尺寸 */
-    height: auto; 
-    max-height: 260px; 
+    width: 50%;              /* 佔左半 */
+    height: auto;
     object-fit: cover;
     border-radius: 8px;
 }
 
+/* 右側文字區塊 */
 .news-content {
-    flex: 1; /* 內容佔據剩餘空間 */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .news-content h3 {
     margin: 0 0 10px;
-    font-size: 20px;
+    font-size: 26px;
     font-weight: 700;
 }
 
 .news-content p {
-    margin: 0 0 15px;
+    margin: 0 0 20px;
     color: #444;
-    line-height: 1.5;
+    line-height: 1.6;
+    font-size: 18px;
 }
 
+/* 按鈕 */
 .news-btn {
-    padding: 8px 16px;
+    padding: 10px 20px;
     background: #000;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
+    width: fit-content;
+    font-size: 18px;
 }
+
 
 .news-btn:hover {
     background: #333;
 }
-
-.warning {
-    margin-top: 10px;
-    font-size: 14px;
-    color: #666;
-}
-
-
 
 
 
@@ -741,7 +692,7 @@ background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 
 
 .footer-column p,
 .footer-column a {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.6;
     margin-bottom: 10px;
     color: #e5e5e5;
