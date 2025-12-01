@@ -6,45 +6,52 @@
   </head>
   <body>
 
+
+    <!DOCTYPE html>
+<html>
+<head>
+<title>Hello, World!</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
 <header class="top-nav">
-        
-    <div class="nav-left">
-    
-   <a href="#">WHISKIES</a></td>
-   <a href="#">RUMS</a></td>
-   <a href="#">OTHERS</a></td>
 
-    </div>
+<div class="nav-left">
 
-    <div class="nav-logo">
-        <h1>LOGO</h1>
-    </div>
+<a href="#">全部</a></td>
+<a href="#">威士忌</a></td>
+<a href="#">葡萄酒</a></td>
+<a href="#">清酒</a></td>
+<a href="#">雞尾酒</a></td>
 
-    <div class="nav-right">
-        <span class="icon-search"> 📞 </span>
-        <p> 02 1234 5678 </p>
-    </div>
-    
+</div>
+
+<div class="nav-logo">
+<h1>LOGO</h1>
+</div>
+
+<div class="nav-right">
+<span class="icon-search"> 📞 </span>
+<p> 02 1234 5678 </p>
+</div>
+
 </header>
 
 <nav class="sub-nav">
-    <a href="#" class="active">Itineraries</a>
-    <a href="#">New arrivals</a>
-    <a href="#">Offers</a>
-    <a href="#">Scotland</a>
-    <a href="#">Japan</a>
-    <a href="#">France</a>
-    <a href="#">USA</a>
-    <a href="#">World</a>
-    <a href="#">Rarities</a>
+<a href="#" class="active">天道</a>
+<a href="#">紅酒品牌</a>
+<a href="#">清酒品牌</a>
+<a href="#">雞尾酒品牌</a>
+<a href="#">其他</a>
 
-    <div class="search-box">
-        <input type="text" placeholder="Find">
-        <span class="icon-search">🔍</span>
-    </div>
- 
- <span class="icon-search">👤</span>
- <span class="icon-search">🛒</span>
+<div class="search-box">
+<input type="text" placeholder="Find">
+<span class="icon-search">🔍</span>
+</div>
+
+<span class="icon-search">👤</span>
+<span class="icon-search">🛒</span>
 
 </nav>
 
@@ -65,286 +72,279 @@
 </div>
 <button class="btn-primary btn-large">Shop New Arrivals</button>
 </div>
- </section>
+</section>
 
 
- <!-- 探索威士忌區域 -->
+
+<!-- 新上市 -->
+<section class="now-showing">
+    <h2 class="now-title">NOW SHOWING</h2>
+
+    <div class="now-grid">
+
+        <div class="now-banner" style="background-image: url('https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1920&q=80');">
+            <button class="now-btn">DISCOVER</button>
+        </div>
+
+        <div class="now-banner" style="background-image: url('https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1920&q=80');">
+            <button class="now-btn">DISCOVER</button>
+        </div>
+
+        <div class="now-banner" style="background-image: url('https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1920&q=80');">
+            <button class="now-btn">DISCOVER</button>
+        </div>
+
+        <div class="now-banner" style="background-image: url('https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1920&q=80');">
+            <button class="now-btn">DISCOVER</button>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- 探索酒區域 -->
 <section class="discover-section">
-<h2 class="section-title">DISCOVER OUR WHISKIES</h2>
-<div class="discover-container">
-<button class="scroll-arrow scroll-arrow-left" aria-label="向左滑動">
-    <svg viewBox="0 0 24 24" class="arrow-icon">
-        <path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" fill="none"
-              stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-</button>
+<h2 class="section-title">探索我們的酒</h2>
 <div class="discover-grid">
-<a href="#" class="discover-card">
-<div class="discover-icon">
-<svg viewBox="0 0 100 100" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                            
-<!-- 蘇格蘭地圖輪廓 -->
-<path d="M20 40 L25 35 L30 30 L35 25 L40 30 L45 35 L50 40 L55 45 L60 50 L65 55 L70 60 L75 65 L80 70 L75 75 L70 80 L65 75 L60 70 L55 65 L50 60 L45 55 L40 50 L35 45 L30 40 L25 35 Z" fill="currentColor" opacity="0.8"/>
-</svg>
-</div>
-<p class="discover-label">SCOTCH<br>WHISKY</p>
-</a>
-<a href="#" class="discover-card">
-<div class="discover-icon">
-<svg viewBox="0 0 100 100" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 
-<!-- 日本地圖輪廓 -->
-<path d="M30 25 L50 20 L70 25 L75 35 L70 45 L65 55 L60 65 L55 70 L50 75 L45 70 L40 65 L35 55 L30 45 Z" fill="currentColor" opacity="0.8"/>
-<path d="M55 30 L60 25 L65 30 L60 35 Z" fill="currentColor" opacity="0.8"/>
-</svg>
+<div class="discover-card">
+<img src="https://images.unsplash.com/photo-1557682260-96773eb01377?q=80&w=1200" alt="威士酒">
+<p>威士忌</p>
 </div>
-<p class="discover-label">JAPANESE<br>WHISKY</p>
-</a>
-<a href="#" class="discover-card">
-<div class="discover-icon">
-<svg viewBox="0 0 100 100" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 
-<!-- 法國地圖輪廓 -->
-<path d="M25 30 L35 25 L50 30 L65 25 L75 30 L80 40 L75 50 L70 60 L65 70 L60 75 L50 70 L40 65 L30 60 L25 50 Z" fill="currentColor" opacity="0.8"/>
-<path d="M70 80 L75 75 L80 80 L75 85 Z" fill="currentColor" opacity="0.8"/>
-</svg>
+<div class="discover-card">
+<img src="https://images.unsplash.com/photo-1557682260-96773eb01377?q=80&w=1200" alt="葡萄酒">
+<p>葡萄酒</p>
 </div>
-<p class="discover-label">FRENCH<br>WHISKY</p>
-</a>
-<a href="#" class="discover-card">
-<div class="discover-icon">
-<svg viewBox="0 0 100 100" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 
-<!-- 火焰圖標 -->
-<path d="M50 80 L45 70 L40 60 L35 50 L40 40 L45 35 L50 30 L55 35 L60 40 L65 50 L60 60 L55 70 Z" fill="currentColor" opacity="0.8"/>
-<path d="M45 55 L50 50 L55 55" fill="currentColor" opacity="0.9"/>
-</svg>
+<div class="discover-card">
+<img src="https://images.unsplash.com/photo-1557682260-96773eb01377?q=80&w=1200" alt="清酒">
+<p>清酒</p>
 </div>
-<p class="discover-label">PEATED</p>
-</a>
-<a href="#" class="discover-card">
-<div class="discover-icon">
-<svg viewBox="0 0 100 100" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-<!-- 麥穗圖標 -->
-<path d="M50 20 L48 35 L50 50 L52 35 Z" fill="currentColor" opacity="0.8"/>
-<circle cx="50" cy="60" r="8" fill="none" stroke="currentColor" stroke-width="2" opacity="0.8"/>
-<path d="M50 68 L50 80" stroke="currentColor" stroke-width="2" opacity="0.8"/>
-</svg>
-</div>
-<p class="discover-label">SINGLE<br>MALT</p>
-</a>
-<a href="#" class="discover-card">
-<div class="discover-icon">
-<svg viewBox="0 0 100 100" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                            
-<!-- 購物袋圖標 -->
-<path d="M30 30 L70 30 L75 35 L80 40 L80 70 L75 75 L70 80 L30 80 L25 75 L20 70 L20 40 L25 35 Z" fill="none" stroke="currentColor" stroke-width="2" opacity="0.8"/>
-<path d="M40 30 L40 20 L45 15 L55 15 L60 20 L60 30" fill="none" stroke="currentColor" stroke-width="2" opacity="0.8"/>
-<circle cx="50" cy="55" r="3" fill="currentColor" opacity="0.8"/>
-</svg>
-</div>
-<p class="discover-label">OFFERS</p>
-</a>
-</div>
-<button class="scroll-arrow scroll-arrow-right" aria-label="向右滑動">
-    <svg viewBox="0 0 24 24" class="arrow-icon">
-        <path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" fill="none"
-              stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-</button>
 
-
+<div class="discover-card">
+<img src="https://images.unsplash.com/photo-1557682260-96773eb01377?q=80&w=1200" alt="雞尾酒">
+<p>雞尾酒</p>
 </div>
+
 </section>
 
 
-<!-- 分類焦點區域 -->
+<!-- 熱門品牌區域 -->
 <section class="category-section">
-<h2 class="section-title">Category Focus</h2>
+<h2 class="section-title">熱門品牌</h2>
 <div class="category-grid">
+
 <a href="#" class="category-card category-whiskey">
-<p class="category-name">Whiskey Collection</p>
+<p class="category-name">天道</p>
 </a>
+
 <a href="#" class="category-card category-wine">
-<p class="category-name">Fine Wines</p>
+<p class="category-name">葡萄酒品牌名字</p>
 </a>
+
 <a href="#" class="category-card category-non-alcoholic">
-<p class="category-name">Craft Non-Alcoholics</p>
+<p class="category-name">清酒品牌名字</p>
 </a>
+
+<a href="#" class="category-card category-non-alcoholic">
+<p class="category-name">雞尾酒品牌名字</p>
+</a>
+
 </div>
 </section>
+
 
 <!-- 特色商品區域 -->
 <section class="products-section">
-  <h2 class="section-title">Seasonal Specials</h2>
-  <div class="products-grid">
+  <h2 class="section-title">特色商品</h2>
+
+  <!-- 左右箭頭 -->
+  <button class="scroll-arrow left-arrow">❮</button>
+  <button class="scroll-arrow right-arrow">❯</button>
+
+  <!-- 橫向卷軸 -->
+  <div class="products-slider">
 
     <!-- 商品卡片 1 -->
     <div class="product-card">
       <div class="product-image-wrapper">
-        <img class="product-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWCPxQIzheU0H_i7e2RcGyqzvRn1MGdk9KN2N1H20OQ_sFV1fJ2RUcUgM3VKzD9wChikiUqk488fsVxGVLBQNzMYBJsmFWGRk6GYDRujeJ46oU5UwPFa5JaNjsnMziXvH92dB1EWxW3e1lVc58naLZt56una6FToSHbtUOwOkLmVeqTPn0udfagyvrVjoZyUBcfIZBXTQkhO1O2AYyGUZ-RvoaaAEV31u5DUS2F33dB0v4ZvAVZx4EEQQ_bA8IgdBV-tHbORblgg" alt="Artisan Dry Gin">
+        <img class="product-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWCPxQIzheU0H_i7e2RcGyqzvRn1MGdk9KN2N1H20OQ_sFV1fJ2RUcUgM3VKzD9wChikiUqk488fsVxGVLBQNzMYBJsmFWGRk6GYDRujeJ46oU5UwPFa5JaNjsnMziXvH92dB1EWxW3e1lVc58naLZt56una6FToSHbtUOwOkLmVeqTPn0udfagyvrVjoZyUBcfIZBXTQkhO1O2AYyGUZ-RvoaaAEV31u5DUS2F33dB0v4ZvAVZx4EEQQ_bA8IgdBV-tHbORblgg" alt="">
       </div>
-      <div class="product-info">
-        <h3 class="product-name">Artisan Dry Gin</h3>
-        <p class="product-price">$34.99</p>
-      </div>
-      <button class="btn-primary btn-full">Add to Cart</button>
+    <div class="product-info">
+    <h3 class="product-name">天上夢幻 旨口 特別純米</h3>
+    <div class="product-price-box">
+        <p class="market-price">市價：NT$1,000</p>
+        <p class="member-price">會員價：NT$950</p>
+    </div>
+    </div>
+      <button class="btn-product-primary btn-full">Add to Cart</button>
     </div>
 
     <!-- 商品卡片 2 -->
     <div class="product-card">
       <div class="product-image-wrapper">
-        <img class="product-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiLVXsYA8a0dsFhwHLURM-pJB79XfRO2I0r086dISB4lIfeKgnMC6-i6f97jFbYZ26yq2S97w3tpqKtRVKE-Klmc9GDMTrpfiRQDl2eb3jAzR1MiLiBPSyInOlzp7WENQEMBLZAPBY-GJFQW14MAxsOLCjk2iMcbl71o2rgdR4ye2V2IOCL1jW9KE_Wg-hjxNITj2JpY5vOg_csa0rao5v3ZccPjeExey91VECgaeYaxXOtDW6T3tqQ32EERKZox5_nvgzCZHMRg" alt="12-Year Aged Rum">
+        <img class="product-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiLVXsYA8a0dsFhwHLURM-pJB79XfRO2I0r086dISB4lIfeKgnMC6-i6f97jFbYZ26yq2S97w3tpqKtRVKE-Klmc9GDMTrpfiRQDl2eb3jAzR1MiLiBPSyInOlzp7WENQEMBLZAPBY-GJFQW14MAxsOLCjk2iMcbl71o2rgdR4ye2V2IOCL1jW9KE_Wg-hjxNITj2JpY5vOg_csa0rao5v3ZccPjeExey91VECgaeYaxXOtDW6T3tqQ32EERKZox5_nvgzCZHMRg" alt="">
       </div>
-      <div class="product-info">
-        <h3 class="product-name">12-Year Aged Rum</h3>
-        <p class="product-price">$45.50</p>
-      </div>
-      <button class="btn-primary btn-full">Add to Cart</button>
+    <div class="product-info">
+    <h3 class="product-name">天上夢幻 旨口 特別純米</h3>
+    <div class="product-price-box">
+        <p class="market-price">市價：NT$1,000</p>
+        <p class="member-price">會員價：NT$950</p>
     </div>
+    </div>
+      <button class="btn-product-primary btn-full">Add to Cart</button>
+    </div>
+
+
 
     <!-- 商品卡片 3 -->
     <div class="product-card">
       <div class="product-image-wrapper">
-        <img class="product-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADLBs19nUxXneqKOhrvBM0r5wzS-LVLQfI-o-L4OLyw5gTVH5PUOuftLi283WklhrTszDnQVq8aHIrXNUsj2Pjw3gCczqQDE0DSPFInYfeVHe5-FGwpQzKKI7GW1vQhkbO5HXDs2feFSjz3tKpq6P1HMpII-od3VBfsDw7ZAZbxjXbP5PH_Qy-cJ1N2WkTBkEFN132coui1VcdCTNORvyk2HCqwUVnP-FKaZoW5HtgoOdeKEluZLlIfTvEgxXLaeGUEk-HwbBI9A" alt="Summer Rosé Wine">
+        <img class="product-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADLBs19nUxXneqKOhrvBM0r5wzS-LVLQfI-o-L4OLyw5gTVH5PUOuftLi283WklhrTszDnQVq8aHIrXNUsj2Pjw3gCczqQDE0DSPFInYfeVHe5-FGwpQzKKI7GW1vQhkbO5HXDs2feFSjz3tKpq6P1HMpII-od3VBfsDw7ZAZbxjXbP5PH_Qy-cJ1N2WkTBkEFN132coui1VcdCTNORvyk2HCqwUVnP-FKaZoW5HtgoOdeKEluZLlIfTvEgxXLaeGUEk-HwbBI9A" alt="">
       </div>
-      <div class="product-info">
-        <h3 class="product-name">Summer Rosé Wine</h3>
-        <p class="product-price">$19.99</p>
-      </div>
-      <button class="btn-primary btn-full">Add to Cart</button>
+    <div class="product-info">
+    <h3 class="product-name">天上夢幻 旨口 特別純米</h3>
+    <div class="product-price-box">
+        <p class="market-price">市價：NT$1,000</p>
+        <p class="member-price">會員價：NT$950</p>
+    </div>
+    </div>
+      <button class="btn-product-primary btn-full">Add to Cart</button>
     </div>
 
     <!-- 商品卡片 4 -->
     <div class="product-card">
       <div class="product-image-wrapper">
-        <img class="product-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClRyok7Tru-ej6kxcgxIJYypHZELT5aYSZ6ldiOuTkTr4Ad8TLKqPTPEJtbn6WaxNr_X4rgIQN-ctlvIER8SzNYRQwTGUKCkA_Xxqq50j-8EYY2TmhNPk7-AQKKLGSShgQ_poGPGjCHST86I50L-Ib62m9c9QXoZvUIJDu-3hCXO6KSrHAWna5PW_kw_ikVH7RgvFkEYi-4KZxgWTTuaGOMgVA64zWHhDeLgeGv3w8JWxxxEMTb6ZaGCi70HGL0eQlezzlojP9eA" alt="Hazy IPA Craft Beer">
+        <img class="product-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClRyok7Tru-ej6kxcgxIJYypHZELT5aYSZ6ldiOuTkTr4Ad8TLKqPTPEJtbn6WaxNr_X4rgIQN-ctlvIER8SzNYRQwTGUKCkA_Xxqq50j-8EYY2TmhNPk7-AQKKLGSShgQ_poGPGjCHST86I50L-Ib62m9c9QXoZvUIJDu-3hCXO6KSrHAWna5PW_kw_ikVH7RgvFkEYi-4KZxgWTTuaGOMgVA64zWHhDeLgeGv3w8JWxxxEMTb6ZaGCi70HGL0eQlezzlojP9eA" alt="">
       </div>
-      <div class="product-info">
-        <h3 class="product-name">Hazy IPA Craft Beer</h3>
-        <p class="product-price">$6.99</p>
-      </div>
-      <button class="btn-primary btn-full">Add to Cart</button>
+    <div class="product-info">
+    <h3 class="product-name">天上夢幻 旨口 特別純米</h3>
+    <div class="product-price-box">
+        <p class="market-price">市價：NT$1,000</p>
+        <p class="member-price">會員價：NT$950</p>
+    </div>
+    </div>
+      <button class="btn-product-primary btn-full">Add to Cart</button>
     </div>
 
   </div>
 </section>
 
+  </div>
+</section>
 
 <!--期間限定 -->
 <section class="news-section">
+<h2 class="section-title">期間限定</h2>
 
+<!-- 原本的卡片開始 -->
 
-  <h2 class="section-title">期間限定</h2>
-  
-  <!-- 原本的卡片開始 -->
+<!-- 卡片 1 -->
+<div class="news-card">
+<img src="https://images.unsplash.com/photo-1557682260-96773eb01377?q=80&w=1200" alt="氣泡酒">
+<div class="news-content">
+<h3>義大利甜蜜聖誕氣泡酒 🎄</h3>
+<p>
+經典節慶必備的氣泡酒款，帶有細緻甜味與清爽口感，是冬季送禮與派對首選。
+</p>
+<button class="news-btn">查看更多</button>
+</div>
+</div>
 
-  <!-- 卡片 1 -->
-  <div class="news-card">
-    <img src="https://images.unsplash.com/photo-1607082349566-187aab3c509d?q=80&w=1200" alt="聖誕節限定氣泡酒">
-    <div class="news-content">
-      <h3>義大利甜蜜聖誕氣泡酒 🎄</h3>
-      <p>
-        經典節慶必備的氣泡酒款，帶有細緻甜味與清爽口感，是冬季送禮與派對首選。
-      </p>
-      <button class="news-btn">查看更多</button>
-      
-    </div>
-  </div>
+<!-- 卡片 2 -->
+<div class="news-card">
+<img src="https://images.unsplash.com/photo-1557682260-96773eb01377?q=80&w=1200" alt="氣泡酒">
+<div class="news-content">
+<h3>甜蜜聖誕氣泡 🎄</h3>
+<p>
+甜一點的冬季限定氣泡酒，酸度與甜度取得絕佳平衡，任何餐點都好搭！
+</p>
+<button class="news-btn">限量搶購</button>
+</div>
+</div>
 
-  <!-- 卡片 2（左右反向） -->
-  <div class="news-card reverse">
-    <div class="news-content">
-      <h3>甜蜜聖誕氣泡 🎄</h3>
-      <p>
-        甜一點的冬季限定氣泡酒，酸度與甜度取得絕佳平衡，任何餐點都好搭！
-      </p>
-      <button class="news-btn">限量搶購</button>
-    </div>
-    <img src="https://images.unsplash.com/photo-1557682260-96773eb01377?q=80&w=1200" alt="氣泡酒">
-  </div>
+<!-- 卡片 3 -->
+<div class="news-card">
+<img src="https://images.unsplash.com/photo-1557682260-96773eb01377?q=80&w=1200" alt="氣泡酒">
+<div class="news-content">
+<h3>年菜圍爐標配 🧧</h3>
+<p>
+過年就該配點好喝的！特選適合圍爐餐桌的酒款，讓年夜飯更有儀式感。
+</p>
+<button class="news-btn">立即選購</button>
+</div>
+</div>
 
-  <!-- 卡片 3 -->
-  <div class="news-card">
-    <img src="https://images.unsplash.com/photo-1582819509237-1eecd6f5d1d2?q=80&w=1200" alt="年菜圍爐配酒">
-    <div class="news-content">
-      <h3>年菜圍爐標配 🧧</h3>
-      <p>
-        過年就該配點好喝的！特選適合圍爐餐桌的酒款，讓年夜飯更有儀式感。
-      </p>
-      <button class="news-btn">立即選購</button>
-    </div>
-  </div>
-
-  <!-- 卡片 4 -->
-  <div class="news-card">
-    <img src="https://images.unsplash.com/photo-1575036284020-f06cc2a9e68c?q=80&w=1200" alt="全球爆款龍舌蘭">
-    <div class="news-content">
-      <h3>全球爆款龍舌蘭 🌎</h3>
-      <p>
-        由知名 NBA 球星監製的熱門龍舌蘭，順口又有個性，口碑爆棚。
-      </p>
-      <button class="news-btn">熱門熱銷</button>
-    </div>
-  </div>
+<!-- 卡片 4 -->
+<div class="news-card">
+<img src="https://images.unsplash.com/photo-1557682260-96773eb01377?q=80&w=1200" alt="氣泡酒">
+<div class="news-content">
+<h3>全球爆款龍舌蘭 🌎</h3>
+<p>
+由知名 NBA 球星監製的熱門龍舌蘭，順口又有個性，口碑爆棚。
+</p>
+<button class="news-btn">熱門熱銷</button>
+</div>
+</div>
 
 </section>
 
+<!-- ====== Footer 區塊 ====== -->
+<footer class="site-footer">
+    <div class="footer-container">
 
-<!-- 頁尾 -->
-<footer class="footer">
-<div class="footer-grid">
-<div class="footer-column">
-<h3 class="footer-title">About Us</h3>
-<nav class="footer-nav">
-<a href="#" class="footer-link">Our Story</a>
-<a href="#" class="footer-link">Careers</a>
-<a href="#" class="footer-link">Press</a>
-</nav>
-</div>
-<div class="footer-column">
-<h3 class="footer-title">Product Categories</h3>
-<nav class="footer-nav">
-<a href="#" class="footer-link">Whiskey</a>
-<a href="#" class="footer-link">Wine</a>
-<a href="#" class="footer-link">Non-alcoholic</a>
-<a href="#" class="footer-link">All Products</a>
-</nav>
-</div>
-<div class="footer-column">
-<h3 class="footer-title">Customer Service</h3>
-<nav class="footer-nav">
-<a href="#" class="footer-link">Shipping</a>
-<a href="#" class="footer-link">Returns & Exchanges</a>
-<a href="#" class="footer-link">FAQs</a>
-</nav>
-</div>
-<div class="footer-column">
-<h3 class="footer-title">Contact Us</h3>
-<nav class="footer-nav">
-<a href="#" class="footer-link">Contact Information</a>
-<div class="social-links">
-<a href="#" class="social-link">
-<svg class="social-icon" fill="currentColor" viewBox="0 0 24 24"><path d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 2.9,4.79C2.53,5.42 2.33,6.16 2.33,6.94C2.33,8.43 3.11,9.75 4.26,10.54C3.54,10.51 2.87,10.31 2.3,10V10.05C2.3,12.27 3.84,14.11 5.92,14.54C5.58,14.63 5.22,14.66 4.85,14.66C4.59,14.66 4.33,14.64 4.08,14.59C4.66,16.43 6.34,17.75 8.37,17.78C6.88,18.94 4.96,19.64 2.9,19.64C2.55,19.64 2.2,19.62 1.86,19.56C3.91,20.88 6.32,21.66 8.96,21.66C16.02,21.66 20.24,15.95 20.24,10.91C20.24,10.74 20.24,10.57 20.23,10.4C20.98,9.86 21.8,9.08 22.46,8.12V6Z"></path></svg>
-</a>
-<a href="#" class="social-link">
-<svg class="social-icon" fill="currentColor" viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12C2,17.52 6.48,22 12,22C17.52,22 22,17.52 22,12C22,6.48 17.52,2 12,2M17.5,17.5H15V12.5C15,11.31 14.19,10.5 13.5,10.5C12.81,10.5 12,11.31 12,12.5V17.5H9.5V8.5H12V10C12.5,9 13.5,8.5 14.5,8.5C16.5,8.5 17.5,9.5 17.5,11.5V17.5Z"></path></svg>
-</a>
-<a href="#" class="social-link">
-<svg class="social-icon" fill="currentColor" viewBox="0 0 24 24"><path d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H17V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z"></path></svg>
-</a>
-</div>
-</nav>
-</div>
-</div>
-<div class="footer-copyright">
-© 2024 BevyStore. All rights reserved.
-</div>
+        <div class="footer-column">
+            <h3 class="footer-title">關於我們</h3>
+            <p>提供多種酒類資訊、品酒指南與專業推薦。</p>
+            <div class="footer-social-icons">
+                <img src="icons/facebook.svg" alt="Facebook">
+                <img src="icons/instagram.svg" alt="Instagram">
+                <img src="icons/youtube.svg" alt="YouTube">
+            </div>
+        </div>
+
+        <div class="footer-column">
+            <h3 class="footer-title">產品分類</h3>
+            <a href="#">威士忌</a>
+            <a href="#">葡萄酒</a>
+            <a href="#">清酒</a>
+            <a href="#">雞尾酒</a>
+        </div>
+
+        <div class="footer-column">
+            <h3 class="footer-title">顧客服務</h3>
+            <a href="#">常見問題</a>
+            <a href="#">會員中心</a>
+            <a href="#">訂單查詢</a>
+            <a href="#">退換貨政策</a>
+        </div>
+
+        <div class="footer-column">
+            <h3 class="footer-title">聯絡資訊</h3>
+            <p>Email：support@xxx.com</p>
+            <p>電話：02-1234-5678</p>
+            <p>地址：台北市信義區 XX 路 XX 號</p>
+        </div>
+
+    </div>
+
+    <div class="footer-warning">
+        <span>未滿十八歲請勿飲酒。</span><br>
+        <span>禁止酒駕，飲酒過量有害健康。</span>
+    </div>
 </footer>
+
+
+
+
 </div>
-</div>
-</div>
-</div>
+</section>
+
+
+
 <script src="script.js" defer></script>
 </body>
 </html>
