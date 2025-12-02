@@ -729,6 +729,13 @@ font-size: 20px;
     padding-top: 24px;
 }
 
+.footer-warning img {
+    height: 60px;     /* 跟字大小一樣 */
+    vertical-align: middle; /* 讓圖片與文字垂直置中對齊 */
+    margin: 0 12px;   /* 左右留一點空隙，看起來更整齊 */
+    color:white
+}
+
 .footer-warning span {
     color: #ffffff;
 }
