@@ -97,7 +97,7 @@
 
 
 
-/* --- Sub Navigation (次分類 + 搜尋框) --- */
+/* --- Sub Navigation --- */
 .sub-nav {
     width: 100%;
     padding: 10px 40px;
@@ -107,73 +107,51 @@
     border-bottom: 1px solid #ddd;
 }
 
+/* 左邊分類 */
 .sub-nav a {
     text-decoration: none;
     font-size: 18px;
     color: black;
 }
-
 .sub-nav a.active {
     color: #0a2a1f;
     font-weight: bold;
 }
 
-/* --- 搜尋框 --- */
+/* 中間搜尋框 */
 .search-box {
-    margin-left: auto;
+    margin: 0 auto; /* ← 放中間的重點 */
     border: 1px solid #ddd;
     padding: 5px 10px;
     display: flex;
     align-items: center;
-    width: 250px;
+    width: 550px;
 }
-
 .search-box input {
     border: none;
     flex: 1;
     outline: none;
     font-size: 18px;
+       padding: 4px 6px;
+}
+.search-icon img {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    display: block;
 }
 
-#search-icon .icon {
+
+/* 搜尋框右邊的 icon */
+.cart-icon img,
+.user-icon img {
     width: 24px;
     height: 24px;
-    stroke: #2a2a2a;     /* Default 顏色 */
-    transition: 0.25s;
     cursor: pointer;
-}
-
-#search-icon .icon:hover {
-    stroke: #3f3f3f;     /* Hover */
-}
-
-#search-icon .icon:active {
-    stroke: #1a1a1a;     /* 按下 Active */
+    margin-left: 15px;  /* 與前方保持距離 */
 }
 
 
-#user-icon .icon {
-    width: 24px;
-    height: 24px;
-    stroke: #2a2a2a;  /* Default */
-    transition: 0.25s;
-    cursor: pointer;
-}
-
-#user-icon .icon:hover {
-    stroke: #3f3f3f;  /* Hover */
-}
-
-#user-icon .icon:active {
-    stroke: #1a1a1a;  /* Active */
-}
-
-
-.avant {
-    margin-left: 20px;
-    color: #c0392b;
-    font-weight: bold;
-}
 
 /* ========== 促銷橫幅 ========== */
 .promo-banner {
